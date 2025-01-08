@@ -1,5 +1,4 @@
-
-      import React from "react";
+import React from "react";
 import Image from "next/image";
 
 const HomePage2 = () => {
@@ -160,5 +159,3 @@ const HomePage2 = () => {
 };
 
 export default HomePage2;
-
-
