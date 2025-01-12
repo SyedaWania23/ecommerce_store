@@ -1,5 +1,7 @@
+
 "use client"
 import React, { useState } from 'react'
+import Image from 'next/image';
 import Link from 'next/link';
 import { IoCartOutline } from "react-icons/io5";
 import { IoIosHeartEmpty } from "react-icons/io";
@@ -48,12 +50,12 @@ const HomePage = () => {
   const cartItemCount = cartItems.length; // count unique items (products)
 
   // Remove item from cart
-  const removeItem = (id:any) => {
+  const removeItem = (id: number) => {
     setCartItems(cartItems.filter(item => item.id !== id));
   };
 
   // Handle search input change
-  const handleSearchChange = (e:any) => {
+  const handleSearchChange = (e:React.ChangeEvent<HTMLInputElement>) => {
     setSearchQuery(e.target.value);
   };
 
@@ -127,7 +129,7 @@ const HomePage = () => {
             {cartItems.map(item => (
               <div key={item.id} className="flex justify-between items-center py-4 border-b">
                 {/* Left: Product Image */}
-                <img src={item.image} alt={item.name} className="w-20 h-20 object-cover" />
+                <Image src={item.image} alt={item.name} className="w-20 h-20 object-cover" />
 
                 {/* Right: Product Info */}
                 <div className="flex flex-col justify-between ml-4 w-full">
@@ -166,8 +168,3 @@ const HomePage = () => {
 }
 
 export default HomePage;
-
-
-
-
-
