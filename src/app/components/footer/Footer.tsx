@@ -1,62 +1,84 @@
-
-import React from 'react'
+import React from 'react';
 
 const Footer = () => {
-
-
- 
   return (
     <div>
-    <div className='flex p-9 h-[555px] gap-5 pt-32'>
-      <div className=''>
-      <h1 className='text-gray-400 pt-20 mx-10'>400 University Drive Suite 200 Coral  <br /> Gables,<br />
-      FL 33134 USA </h1>
-      </div>
 
-      {/* ***Links */}
-      <div className="flex flex-col items-start space-y-2 gap-[24px] mx-10">
-      <h1 className=" text-[#9F9F9F] text-base w-[40px] h-[24px] ">Links</h1>
-          <h1 className="font-medium text-base w-[48px] h-[24px]">Home</h1>
-          <h1 className="font-medium text-base w-[49px] h-[24px]">About</h1>
-          <h1 className="font-medium text-base w-[68px] h-[24px]">Login </h1>
-          <h1 className="font-medium text-base w-[48px] h-[24px]">Cart</h1>
-          <h1 className="font-medium text-base w-[66px] h-[24px]">Wishlist</h1>
-         
+
+<footer className="text-gray-600 body-font">
+  <div className="container px-16 py-24 mx-auto">
+    <div className="flex flex-wrap md:text-left text-center order-first">
+      <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+  
+        {/* Address Section */}
+         <div className="flex-1 ">           
+          <h1 className="text-gray-400 pt-32 ">
+             400 University Drive Suite 200 Coral <br /> Gables, <br />
+             FL 33134 USA
+           </h1>
         </div>
+      </div>
 
-        {/* Quick Links Section */}
-        <div className="flex flex-col items-start space-y-2 gap-[24px] mx-10">
-          <h1 className="
-          text-[#9F9F9F] text-[16px] w-[40px] h-[24px]">Help</h1>
-          <h1 className="font-medium text-base w-[109px] h-[24px]">Privacy Policy</h1>
-          <h1 className="font-medium w-[105px] h-[24px] text-base">Terms Of Use</h1>
-          <h1 className="font-medium text-base w-[32px] h-[24px]">FAQ</h1>
-          <h1 className="font-medium text-base w-[66px] h-[24px]">Contact</h1>
+{/* ****88 */}
+ 
+
+      <div className="lg:w-1/4 md:w-1/2 w-full px-4">     
+        <nav className="list-none">
+           {/* Links Section */}
+           <div className="flex-1 flex flex-col items-start pt-10 space-y-2 gap-[24px] mx-10">
+           <h1 className="text-[#9F9F9F] tracking-widest mb-3 text-base">Links</h1>
+           <h1 className="font-medium text-base">Home</h1>
+           <h1 className="font-medium text-base">About</h1>
+           <h1 className="font-medium text-base">Login</h1>
+           <h1 className="font-medium text-base">Cart</h1>
+           <h1 className="font-medium text-base">Wishlist  
+            </h1>         </div>
+        </nav>
+      </div>
+      
+           {/* Quick Links Section */} 
+
+<div className="lg:w-1/4 md:w-1/2 w-full px-4">     
+        <nav className="list-none">
+           {/* Links Section */}
+           <div className="flex-1 flex flex-col items-start pt-10 space-y-2 gap-[24px] mx-7">
+           <h1 className="text-[#9F9F9F] tracking-widest mb-3 text-base">Help</h1>
+           <h1 className="font-medium text-base">Privacy Policy</h1>
+           <h1 className="font-medium text-base">Terms Of Use</h1>
+           <h1 className="font-medium text-base">FAQ</h1>
+           <h1 className="font-medium text-base">Contact</h1>
+       
+                     </div>
+        </nav>
+      </div>
+
+
+
+      <div className="lg:w-1/4 md:w-1/2 w-full ">
+        <h2 className="text-[#9F9F9F] tracking-widest text-[16px] pt-10">Newsletter</h2>
+        <div className="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
+          <div className="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
+            <input
+              type="text"
+              placeholder="Enter your email Address"
+              className="border-white underline placeholder-gray-500  pt-8"
+            />
+             
+          </div>
+          <h1 className="underline lg:mt-2 xl:mt-0 flex-shrink-0 px-4  text-black text-medium text-base">Subscribe</h1>
         </div>
-        
-<div className='text-[#9F9F9F] text-[16px] w-[66px] h-[24px]  mx-10'>
-    Newsletter
-
-        <div className=" w-[200px] gap-3 flex pt-8">
-          <input
-            type="text"
-            placeholder="Enter your email Address"
-            className="  border-white underline placeholder-gray-500  w-[200px] h-[26px]"
-          />
-          <h1 className='underline text-black text-medium w-[75px] h-[21px] text-[14px] '>Subscribe</h1>
-          </div>
-          </div>
-          
       </div>
-      <div className='border border-gray-300  flex'>
-
-        {/* email input */}
-     
+    </div>
+     {/* Footer Bottom Section */}
+      <div className="border-t  border-gray-300  mt-5 pt-5">
+         <h1 className="text-center lg:text-start  text-[16px]">
+           2022 Meubel House. All rights reserved
+         </h1>
       </div>
-      <h1 className='text-black ml-16 text-[16px] 
-      mb-10'>2022 Meubel House. All rights reverved</h1>
-      </div>
-  )
-}
+  </div>
+  
 
-export default Footer
+</footer>
+</div>
+  );}
+ export default Footer;
