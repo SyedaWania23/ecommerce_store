@@ -8,10 +8,10 @@ export default function ProductDetail() {
       <div className="flex flex-col lg:flex-row gap-8 p-8">
         {/* Left Side: Small Images */}
         <div className="flex  sm:flex-col flex-wrap gap-4 p-5 sm:p-0 lg:w-[20%] w-full ">
-          <img src="/p2.png" alt="Image 1" className="w-20 h-20 object-cover" />
-          <img src="/p3.png" alt="Image 2" className="w-20 h-20 object-cover" />
-          <img src="/p2.png" alt="Image 3" className="w-20 h-20 object-cover" />
-          <img src="/p3.png" alt="Image 4" className="w-20 h-20 object-cover" />
+          <Image src="/p2.png" alt="Image 1" className="w-20 h-20 object-cover" />
+          <Image src="/p3.png" alt="Image 2" className="w-20 h-20 object-cover" />
+          <Image src="/p2.png" alt="Image 3" className="w-20 h-20 object-cover" />
+          <Image src="/p3.png" alt="Image 4" className="w-20 h-20 object-cover" />
         </div>
 
         {/* Middle: Big Image */}
@@ -102,31 +102,7 @@ export default function ProductDetail() {
         </div>
       </div>
 
-      {/* <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4  justify-center mt-8">
-        <div className="h-[350px] w-[270px]">
-          <img src="/s.png" alt="Product 1" className="h-[250px] w-[270px]" />
-          <h1 className="mt- text-sm sm:text-base text-center pt-6">HAVIT HV-G table chair</h1>
-          <h1 className="text-[#DB4444] ml-9 text-sm sm:text-base">$269</h1>
-        </div>
-
-        <div className="h-[350px] w-[270px]">
-          <img src="/side3.png" alt="Product 2" className="h-[250px] w-[270px]" />
-          <h1 className="mt-3 text-sm ml-9 sm:text-base">AK-900 Wired chair</h1>
-          <h1 className="text-[#DB4444] ml-9 text-sm sm:text-base">$669</h1>
-        </div>
-
-        <div className="h-[350px] w-[270px]">
-          <img src="/coffee-table.png" alt="Product 3" className="h-[250px] w-[270px]" />
-          <h1 className="mt-3 text-sm ml-9 sm:text-base">IPS LCD chair</h1>
-          <h1 className="text-[#DB4444] ml-9 text-sm sm:text-base">$169</h1>
-        </div>
-
-        <div className="h-[350px]">
-          <img src="/side4.png" alt="Product 4" className="h-[250px] w-[270px]" />
-          <h1 className="mt-3 text-sm ml-9 sm:text-base">S-Series Comfort Chair</h1>
-          <h1 className="text-[#DB4444] ml-9 text-[16px] sm:text-sm">$289</h1>
-        </div>
-      </div> */}
+      
 
       <div className="flex flex-wrap lg:flex-nowrap gap-5 justify-center mx-4  space-y-8">
               <div className="h-[350px] w-full sm:w-[270px]">
